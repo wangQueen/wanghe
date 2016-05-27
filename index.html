@@ -21,6 +21,83 @@
 			});
 		</script>
  	 <!-- start-smoth-scrolling -->
+ 	 <style>
+		ul,li{
+		list-style:none;
+		text-decoration: none;
+		padding:0;
+	}
+	.out{
+		width: 600px;
+		height: 600px;
+		border: 1px solid #fff;
+		margin: 50px auto;
+		perspective:1200px;
+		/*perspective-origin:left top;*/
+	}
+	.out ul{
+		width:300px;
+		height: 300px;
+		margin: 100px auto;
+		position: relative;
+		transform-style:preserve-3d;
+		transition:all 500s;
+		transform-origin :center center 150px;
+	}
+	.out ul a{
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		font-size: 200px;
+		color: #fff;
+		text-align: center;
+		line-height: 300px;
+	}
+	.out ul a:nth-of-type(1){
+		background: red;
+		transform:rotateY(180deg);
+	}
+	.out ul a:nth-of-type(2){
+		background: green;
+		transform-origin :top;
+		transform:rotateX(90deg);
+	}
+	.out ul a:nth-of-type(3){
+		background: blue;
+		transform-origin :right;
+		transform:rotateY(90deg);
+	}
+	.out ul a:nth-of-type(4){
+		background: yellow;
+		transform-origin :left;
+		transform:rotateY(-90deg);
+	}
+	.out ul a:nth-of-type(5){
+		background: pink;
+		transform-origin :bottom;
+		transform:rotateX(-90deg);
+	}
+	.out ul a:nth-of-type(6){
+		background: orange;
+		transform:translateZ(300px);
+	}
+	.out:hover ul{
+		transform:rotateY(72000deg);
+	}
+	.out ul a:nth-of-type(1){
+		background: url(images/11.png) no-repeat center center;
+		background-size:cover; 
+	}
+	.out ul a:nth-of-type(3){
+		background: url(images/12.png) no-repeat right top;
+		background-size:cover; 
+	}
+	.out ul a:nth-of-type(4){
+		background: url(images/13.png) no-repeat center center;
+		background-size:cover; 
+	}
+ 	 </style>
 </head>
 <body>
 <!-- headerbg starts -->
@@ -30,12 +107,12 @@
 		 <!-- container starts -->
 			  <div class="container">
 				   <div class="logo">
-						<a href="#">Resume</a>
+						<a href="#">WangHe</a>
 				   </div>
 				  <!-- Navigation starts -->
 				  <div class="nav">
 					 <ul>
-						 <li><a class="scroll" href="#about">ABOUT</a></li>
+						 <li><a class="scroll" href="#about">WORK EXPERIENCE</a></li>
 						 <li><a class="scroll" href="#port">PROJECT</a></li>
 						 <li><a class="scroll" href="#skill">SKILL</a></li>
 						 <li><a class="scroll" href="#contact">CONTACT</a></li>
@@ -73,14 +150,16 @@
 	   <div id="about" class="about">
 		 <div class="container">
 			   <div class="header-section text-center">
-				  <h2><span> </span>ABOUT<span> </span></h2>
+				  <h2><span> </span>WORK EXPERIENCE<span> </span></h2>
 				  </div>
-				 <span><p>。。。。。。。。。</p></span>
+				
 					 
 			  <div class="years">	 
-				<h4><b>2015.12/2016.5</b></h4>
-				 <span><h4>实现地点：山西优逸客科技有限公司</h4></span>
-				 <p><i>实习内容：系统的学习了一下前端工程师的必备技能，精通html5，css3，js等</i></p>
+				<h4><b>2015.5/2016.5</b></h4>
+				 <span><h4>工作地点：山西十方科技有限公司</h4></span>
+				 <p><i>工作内容：平常做一些动效还有数据的处理，做一些
+页面逻辑的跳转，主要用过的技术是jQuery，boot-
+starp，angular.js等</i></p>
 			  </div> 
 				
 			  
@@ -214,7 +293,16 @@
 		 </div>
   </div>
   <!-- Content Ends -->
-  
+  <div class="out">
+		<ul>
+			<a href="http://wangqueen.github.io/todo/" target="_block"></a>
+			<a href=""></a>
+			<a href="http://wangqueen.github.io/picture/" target='_block'></a>
+			<a href="http://wangqueen.github.io/suning/" target='_block'></a>
+			<a href=""></a>
+			<a href="">谢</a>
+		</ul>
+	</div>
  <!-- FOOTER Starts -->
   <div  id="contact" class="footer">
       <div class="container">
@@ -251,7 +339,7 @@
 				 </div>
 				  </div>
 				  <div class="clear"></div>
-				  <p class="copy-right">Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+				  <p class="copy-right">welcome to my websit </p>
 			  </div>
 		 </div>
 	 </div>
